@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Git Setup</title>
+    <!-- Include required JS files -->
+    <script type="text/javascript" src="scripts/shCore.js"></script>
+    <!--
+    At least one brush, here we choose JS. You need to include a brush for every 
+    language you want to highlight
+-->
+    <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="scripts/shBrushPowerShell.js"></script>
+    <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+    <!-- Include *at least* the core style and default theme -->
+    <link href="styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 900px;
+        padding: 1em;
+        background-color: #EEE;
+    }
+    
+    h3 {
+        padding: 1em 0 0em 0;
+    }
+    
+    p {
+        margin: 2em 1em 1em 1em;
+        padding: 0;
+    }
+    
+    ul {
+        margin: 1em 3em;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Git Setup</h1>
+    <p>A few of these steps are not necessarily order dependent, but you will want to come up with a system that you follow. Working with a few of you, it became clear that individual computers may require additional steps to get all set up. Fortunately, if it is your personal laptop or home machine, you will have to do some of these steps only once. I will focus on those first as they get your environment ready to work.
+    </p>
+    <h2>Personal computers (first time only) and outside of H155</h2>
+    <h3 id="one"></a>Step One: Start git user setup</h3>
+    <p>Launch terminal and enter the following code using your own name:
+        <br>
+        <pre class="brush:powershell">git config  --global user.name "Your Name"</pre>
+        <br> If you do not get the prompt and nothing happens, skip to <a href="#three">step 3</a>
+    </p>
+    <h3 id="two"></a>Step Two: Adding Git to your computer</h3>
+    <p>We installed XCode in the H155 lab. That installed git (more specifically the command line tools for version control). If you use other computers on campus or if you use own computer you will receive the following prompt when you try to use git from terminal:</p>
+    <img src="images/tools01.png">
+    <p>And this dialog will appear:</p>
+    <img src="images/xcode00.png">
+    <p>You have the choice to download and install XCode (about 4 gigs of download so be careful) or you can install the command tools. Unless you plan to use XCode go with the other option. Agree with the license after the download.</p>
+    <img src="images/xcode01.png">
+    <p>Enjoy the successful install of the tools.</p>
+    <img src="images/xcode02.png">
+    <h3 id="three"></a>Step Three: Finish git user setup</h3>
+    <p>Enter the following code using your own email:
+        <pre class="brush:powershell">git config  --global user.email "You@mail.com"  </pre>
+    </p>
+    <p><a href="#finish">Continue</a> with the preparation to be ready to fork and clone</p>
+
+
+    <h2>Inside H155</h2> 
+    <h3>Step One: Set yourself up as a super user</h3>
+    <p>Start git user setup Launch terminal. You will have to exert yourself as the super user on the computer. The way to do that is with the <b>sudo</b> command. It is a terminal thing. Enter the following code using your own name:
+        <pre class="brush:powershell">sudo  git config --global user.name "Your Name"</pre>
+    </p>
+    <p>Now you will get the message you need to agree to terms</p>
+    <img src="images/permission01.png">
+    <p>You will be prompted to enter the user password which is <b>htc1</b>. 
+    <p>You will need to hit the <b>ENTER</b> key to view the agreement.</p>
+    <img src="images/permission02.png">
+    <p>Keep hitting <b>space</b> to scroll through the agreement until the end.</p>
+    <img src="images/permission03.png">
+    <p>At that point you will be prompted to type <b>agree</b>.</p>
+    <img src="images/permission04.png">
+    <p>Now you can just enter without needing to repeat the <b>sudo</b> command.
+    <pre class="brush:powershell">
+    git config --global user.name "Your Name"
+    git config --global user.email "You@mail.com"</pre>
+    </p>
+
+    <h2 id="finish">Finish Preparations</h2> 
+    <h3>Navigate to the correct directory for your repo</h3>
+    <p>
+    Navigate to folder Using terminal, navigate to the folder where you will place the cloned repository. Use the commands below as needed to navigate. Refer to a terminal cheat sheet, CodeAcademy, or other resource you find to remember their meanings.
+    <pre class="brush:powershell">
+cd directoryName
+cd .. 
+pwd
+ls
+</pre> 
+</p>
+<p>The next step is to start the <a href="gitCommit">fork</a>.</p>
+
+    <script type="text/javascript">
+    SyntaxHighlighter.all()
+    </script>
+</body>
+
+</html>
