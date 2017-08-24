@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Getting Started</title>
+  <!-- Include required JS files -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <!--
+    At least one brush, here we choose JS. You need to include a brush for every
+    language you want to highlight
+-->
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPowerShell.js"></script>
+  <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+  <!-- Include *at least* the core style and default theme -->
+  <link href="styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="styles/styles.css">
+<style type="text/css">
+
+</style></head>
+
+<body>
+  <h1>Getting Started Part 3</h1>
+<h2>Atom Start</h2>
+<h4>Clone Project Repository</h4>
+<p>In Atom it is time to add our repository. Under the View pull-down menu select Toggle command palette.</p>
+<img src="images/atom04.png" alt="toggle command palette">
+<p>In the command palette, type <b>git clone</b> and then hit the enter or return key.</p>
+<img src="images/atom05.png" alt="git clone">
+<p>Now click in the Clone from box and paste the path you copied from github.com. Then you need to update the To directory with the path you want for your project. Make sure to paste first to get the project folder name in the path correct.</p>
+<img src="images/atom06.png" alt="paste and path">
+<p>Now you are ready to add files to the project.</p>
+<img src="images/atom07.png" alt="time to add files">
+<h4>Create and/or Add Files to the Project</h4>
+<p>Drag over any files you wish to add to the project. Create any new files. You will notice new files will be colored green in the project panel.</p>
+<img src="images/atom08.png" alt="creating new files">
+<h4>Using the Git Package</h4>
+<p>Click on the Packages pull-down menu and then select Github and then select <b>Toggle Git tab</b>.</p>
+<img src="images/atom09.png" alt="opening the git tab">
+<h4>Staging Files</h4>
+<p>In the git panel you will see a list of unstaged assets. Staging is where you prepare the files to be added to the project revision. Click the <b>Stage all</b> button in the upper right corner of the git tab.</p>
+<img src="images/atom10.png" alt="staging files">
+<h4>Commit Revision</h4>
+<p>After staging the files you will then provide a description of the changes to this version of your project. Commits should be made after making content or structural updates to a project. Think of each commit as an UNDO. Git allows you to go back to any previous commit and take the project in a new direction or even multiple directions.</p>
+<p>Type your commit message in the commit field. The message should be short, easy to understand, and reveal the substance of the change. Click the <b>Commit</b> button.</p>
+<img src="images/atom11.png" alt="commit message">
+<h4>Push Update to Github Server</h4>
+<p>The next step is to push your update to the github remote (cloud) server. At the bottom right corner of the git panel you will see an up arrow.</p>
+<img src="images/atom12.png" alt="push icon">
+<p>Click on the up arrow and then click the <b>Push</b> button.</p>
+<img src="images/atom13.png" alt="push button">
+<p>Now you may be prompted to enter your github username and password to complete the PUSH (sync) to the server.</p>
+<img src="images/atom14.png" alt="git credentials">
+
+  <script type="text/javascript">
+    SyntaxHighlighter.all()
+  </script>
+</body>
+
+</html>
