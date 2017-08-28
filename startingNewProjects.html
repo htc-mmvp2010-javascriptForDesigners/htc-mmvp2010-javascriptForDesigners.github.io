@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Starting a New Project</title>
+  <!-- Include required JS files -->
+  <script type="text/javascript" src="scripts/shCore.js"></script>
+  <!--
+    At least one brush, here we choose JS. You need to include a brush for every
+    language you want to highlight
+-->
+  <script type="text/javascript" src="scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="scripts/shBrushPowerShell.js"></script>
+  <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+  <!-- Include *at least* the core style and default theme -->
+  <link href="styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="styles/shThemeRDark.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <style type="text/css">
+    h3,
+    h4 {
+      font-weight: normal;
+    }
+
+    h2 {
+      padding-left: 1em;
+    }
+
+    h3 {
+      padding-left: 2em;
+    }
+
+    h4 {
+      padding-left: 3em;
+    }
+
+    h2 {
+      padding-top: 1em;
+      padding-bottom: 0em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Starting a New Project</h1>
+
+  <p>The following instructions make the assumptions:</p>
+  <ul>
+    <li>you have installed your command line tools on your machine.</li>
+    <li>you have setup your github.com account</li>
+    <li>you have installed the code editor Atom (min. version 1.18)</li>
+  </ul>
+  <h2>GitHub</h2>
+  <h3>login into your github account</h3>
+  <h3>click on <b>Start a project</b></h3>
+  <h4>enter the Repository name</h4>
+  <h4>fill in the description</h4>
+  <h4>check the <b>Initialize with a README</b></h4>
+  <h4>click on <b>Create Repository</b></h4>
+  <h3>click on Settings tab</h3>
+  <h4>scroll down to GitHub pages</h4>
+  <h4>click on None and select <b>Master branch</b></h4>
+  <h4>click Save</h4>
+  <h4>scroll back down to GitHub pages</h4>
+  <h4>right-click on ready to publish URL and copy the link address</h4>
+  <h3>click on Code tab (back at the top)</h3>
+  <h4>click on Edit button (right side of screen)</h4>
+  <h4>right-click in website field and paste GitHub pages URL</h4>
+  <h4>click <b>Save</b> button</h4>
+  <h3>click green<b>Clone or download</b> button</h3>
+  <h4>click the clipboard icon to copy the project URL to the clipboard</h4>
+  <h2>Atom</h2>
+  <h3>under <b>View</b> pull-down menu select <b>Toggle Command Palette</b></h3>
+  <h4>in the command palette, type <b>git clone</b> and hit the return or enter key</h4>
+  <h4>in the <b>Clone From</b> field paste the project URL (copied from github)</h4>
+
+  <h4>update the <b>To Directory</b> with your preferred location</h4>
+  <h3>Update and/or create files</h3>
+  <h4>create any new files and save them to the project folder</h4>
+  <h4>update and save existing files in the project folder</h4>
+  <h3>under the <b>Packages</b> pull-down menu select <b>GitHub</b></h3>
+  <h4>click the <b>Stage All</b> button in the upper right corner of the Git panel</h4>
+  <h4>enter your Commit message in the available field</h4>
+  <h4>click the commit button</h4>
+  <h4>click the <b>Up Arrow</b> button at the bottom of the Git panel</h4>
+  <h4>click the <b>Push</b> button</h4>
+  <h4>enter your GitHub login information if prompted to do so</h4>
+  <h2>GitHub</h2>
+  <h3>navigate back to your project on GitHub</h3>
+  <h4>click on the GitHub Pages link at the top of the project to see your webpages</h4>
+
+  <script type="text/javascript">
+    SyntaxHighlighter.all()
+  </script>
+</body>
+
+</html>
